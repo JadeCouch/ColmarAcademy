@@ -1,0 +1,89 @@
+/*general*/
+
+HTML {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
+/*header*/
+
+header .mobile {
+  display: none;
+}
+
+header .content-container {
+  height: 4rem;
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-title {
+  display: flex;
+  height: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo-text {
+  padding-left: 0.25rem;
+  text-transform: uppercase;
+  display: flex;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+}
+
+#logo-text h2:first-child {
+  font-weight: bold;
+  color: #444444;
+}
+
+#logo-text h2:last-child {
+  color: #999999;
+}
+
+.header-nav ul {
+   display: flex;
+ }
+
+.header-nav ul li {
+  padding-right: 1rem;
+}
+
+/*mobile and tablet header*/
+@media only screen and (max-width: 760px) {
+  header .logo-title,
+  header .header-nav {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+
+/*main banner*/
+.start-banner {
+  background-color: gainsboro;
+}
+
+/*academy information section*/
+.information-image-mobile {
+  display: none;
+}
+
+
+/*start learning - courses section*/
+
+.courses-main {
+  background-color: gainsboro;
+}
