@@ -196,6 +196,10 @@ header .logo-title {
   margin-top: 1rem; /*2rem needed but 1 already included on image*/
 }
 
+.information-block:last-child {
+  background-color: #DCDCDC;
+}
+
 .information-block {
   width: 100%;
   display: flex;
@@ -249,20 +253,34 @@ header .logo-title {
   }
 
   .information-image-mobile img {
-    /*width: 100%;*/
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .campus-information {
+    width: 100%;
   }
 
   .information-block {
     flex-direction: column;
-    max-width: 480px;
+    width: 100%;
+  }
+
+  .information-block:last-child {
+    background-color: #F5F5F5;
   }
 
   .information-text {
-    margin-left: 1rem;
+    width: 1005;
+    padding-left: 2rem;
   }
 
   .information-text h2 {
-    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .information-text p {
+    font-size: 1rem;
   }
 }
 
@@ -316,7 +334,6 @@ header .logo-title {
 }
 
 .course-text p {
-  overflow-wrap: normal;
   color: #A9A9A9;
   font-size: 0.75rem;
   line-height: 1.5;
@@ -330,11 +347,32 @@ header .logo-title {
 /*mobile courses section*/
 @media only screen and (max-width: 480px) {
   .courses-main {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
   }
 
-  .course-image {
+  .courses-section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .course-block {
+    width: 100%;
+  }
+
+  .course-image,
+  .course-content {
     display: none;
+  }
+
+  .course-text {
+    background-color: #D3D3D3;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+
+  .course-text h2 {
+    font-size: 1.25rem;
   }
 
 }
@@ -356,13 +394,12 @@ header .logo-title {
   margin-bottom: 2rem;
 }
 
-/*testing*/
 .exhibit-content {
   display: flex;
 }
 
 .exhibit-article {
-  margin: 2rem 1.5rem;
+  margin: 1rem 1.5rem 1.5rem 1.5rem; /*accounting for different in height for title, etc*/
   width: 60%;
 }
 
@@ -377,10 +414,6 @@ header .logo-title {
   margin-bottom: 1.5rem;
 }
 
-.exhibit-video-text p {
-
-}
-
 .exhibit-examples {
   width: 40%;
   margin-top: 1rem; /*2rem needed but 1 already included on image*/
@@ -389,6 +422,10 @@ header .logo-title {
 .exhibit-block {
   width: 100%;
   display: flex;
+}
+
+.exhibit-block:first-child {
+  background-color: #DCDCDC;
 }
 
 .exhibit-image {
@@ -423,7 +460,14 @@ header .logo-title {
 
 /*mobile exhibit section*/
 @media only screen and (max-width: 480px) {
+  .exhibit-examples,
+  .exhibit-video-text {
+    display: none;
+  }
 
+  .exhibit-article {
+    width: 100%;
+  }
 }
 
 /*footer*/
@@ -446,4 +490,15 @@ footer {
 .footer-links {
   display: flex;
   margin: 0.5rem;
+}
+
+/*footer mobile*/
+@media only screen and (max-width: 480px) {
+  .footer-links {
+    display: none;
+  }
+
+  .footer p {
+    margin: 1rem inherit;
+  }
 }
