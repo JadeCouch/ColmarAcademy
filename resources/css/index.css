@@ -161,6 +161,7 @@ header .logo-title {
 }
 
 .information-main {
+  background-color: #F5F5F5;
   display: flex;
 }
 
@@ -339,6 +340,10 @@ header .logo-title {
 }
 
 /*exhibit section*/
+.exhibit-main {
+  background-color: #F5F5F5;
+}
+
 .exhibit-title {
   display: flex;
   justify-content: center;
@@ -349,4 +354,96 @@ header .logo-title {
   font-weight: bolder;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/*testing*/
+.exhibit-content {
+  display: flex;
+}
+
+.exhibit-article {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.exhibit-video video {
+  width: 100%;
+}
+
+.exhibit-video-text h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.exhibit-video-text p {
+
+}
+
+.exhibit-examples {
+  width: 40%;
+  margin-top: 1rem; /*2rem needed but 1 already included on image*/
+}
+
+.exhibit-block {
+  width: 100%;
+  display: flex;
+}
+
+.exhibit-image {
+  width: 35%;
+  margin: 1rem;
+}
+
+.exhibit-image img {
+  width: 100%;
+}
+
+.exhibit-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.exhibit-text h2,
+.exhibit-text p {
+  margin-bottom: 0.5rem;
+}
+
+.exhibit-text h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.exhibit-text p {
+  font-size: 0.75rem;
+}
+
+/*mobile exhibit section*/
+@media only screen and (max-width: 480px) {
+
+}
+
+/*footer*/
+footer {
+  background-color: #F5F5F5;
+  border-top: 1px solid #DCDCDC;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.footer p {
+  font-size: 0.75rem;
+  margin: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  margin: 0.5rem;
 }
